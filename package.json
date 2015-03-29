@@ -1,0 +1,27 @@
+{
+  "name": "wave-developers.github.io",
+  "version": "0.1.0",
+  "description": "wave makers",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wave-developers/wave-developers.github.io.git"
+  },
+  "keywords": [
+    "meetup",
+    "startup",
+    "html5"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wave-developers/wave-developers.github.io/issues"
+  },
+  "homepage": "https://github.com/wave-developers/wave-developers.github.io",
+  "dependencies": {
+    "assemble": "^0.6.0-beta.5"
+  }
+}
