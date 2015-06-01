@@ -79,14 +79,14 @@
 
 
     <!-- Page Header -->
-    <header class="intro-header" style="background-image: url('/events/2015-05-30.jpg')">
+    <header class="intro-header" style="background-image: url('')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Monte Developers Meetup #03</h1>
+                        <h1>Monte Developers Meetup #04</h1>
                         <hr class="small">
-                        <span class="subheading">Javascript</span>
+                        <span class="subheading">?</span>
                     </div>
                 </div>
             </div>
@@ -96,93 +96,9 @@
     
 
 <article class="is-post container">
-    <h1>Future event <small>30 May 2015</small></h1>
+    <h1>Future event <small>June 2015</small></h1>
     <sections id="speakers">
         <h2>Speakers</h2>
-        
-            <div class="row">
-                <div class="col-md-3 speaker-block">
-                    <h3 id="eugene-potapenko">Eugene Potapenko
-                        
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 speaker-block">
-                    
-                        <p>
-                            <img src="/assets/images/speakers/eugene-potapenko.jpg" width="128" height="128" title="Eugene Potapenko"/>
-                        </p>
-                    
-
-                    
-                        <p>
-                            
-                            
-                            
-                            
-                            
-                                <a target="_blank" href="http://playphrase.me"><i class="fa fa-user"></i></a>
-                            
-                        </p>
-                    
-                </div>
-                <div class="col-md-9">
-                    
-                        <p>
-                            will share his experience of developming playphrase.me with node.js and angular.js.
-                        </p>
-                    
-                        <p>
-                            опыт разработки проекта playphrase.me - node.js + angular
-                        </p>
-                    
-                </div>
-            </div>
-            
-        
-            <div class="row">
-                <div class="col-md-3 speaker-block">
-                    <h3 id="konstantin-baev">Konstantin Baev
-                        
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 speaker-block">
-                    
-                        <p>
-                            <img src="/assets/images/speakers/konstantin-baev.jpg" width="128" height="128" title="Konstantin Baev"/>
-                        </p>
-                    
-
-                    
-                        <p>
-                            
-                            
-                            
-                                <a target="_blank" href="https://www.github.com/kipruss"><i class="fa fa-github"></i></a>
-                            
-                            
-                            
-                                <a target="_blank" href="http://kbaev.ru"><i class="fa fa-user"></i></a>
-                            
-                        </p>
-                    
-                </div>
-                <div class="col-md-9">
-                    
-                        <p>
-                            will talk about Kanban - method of flexible management of processes, survey realizations of Kanban board and introduce Kanbanchi - one of realizations, where he takes part as a developer
-                        </p>
-                    
-                        <p>
-                            о Канбане, методологии гибкого управления задачами. Обзор программных реализаций доски Канбан, а так же Kanbanchi - в разработке которой принимает участие
-                        </p>
-                    
-                </div>
-            </div>
-            
         
         <br/>
         <a href="/call.html" class="btn btn-success"><i class="fa fa-user-plus"></i> Became a speaker (стать докладчиком)</a>
@@ -195,19 +111,29 @@
 </script>
 <script type="text/javascript">
     function initialize() {
-        var mapOptions = {
-            //center: { lat: 42.2040553, lng: 18.9458102},
-            center: { lat: 42.453284, lng: 18.539527 },
-            zoom: 12,
-            scrollwheel: false
-        };
+        var mapOptions;
+        if ('[object Object]' !== '') {
+            mapOptions = {
+                //center: { lat: 42.2040553, lng: 18.9458102},
+                center: { lat: 42.1, lng: 19.1 },
+                zoom: 11,
+                scrollwheel: false
+            };
+        } else {
+            mapOptions = {
+                //center: { lat: 42.2040553, lng: 18.9458102},
+                center: { lat: 42.453284, lng: 18.539527 },
+                zoom: 10,
+                scrollwheel: false
+            };
+        }
 
         var map = new google.maps.Map(
                 document.getElementById('map'),
                 mapOptions);
 
         var nextEventLoc = new google.maps.LatLng(
-            42.453284, 18.539527
+                mapOptions.center.lat, mapOptions.center.lng
         );
 
         var marker = new google.maps.Marker({
@@ -235,32 +161,31 @@
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-<section id="map" style="height: 450px"></section>
+<section id="map" style="height: 450px">
+</section>
 <section>
     <p>
-        Coordinates: <i class="fa fa-map-marker"></i> 42.453284, 18.539527.
-        <a target="_blank" href="https://www.openstreetmap.org/?mlat=42.453284&mlon=18.539527#map=19/42.453284/18.539527"><img
-                src="/assets/images/social/osm-32.jpg" width="32" height="32" alt="Open Street Map"/> Open Street Map</a>
+        
+            Coordinates: <i class="fa fa-map-marker"></i> 42.1, 19.1.
+            <a target="_blank" href="https://www.openstreetmap.org/?mlat=42.1&mlon=19.1#map=19/42.1/19.1"><img
+                    src="/assets/images/social/osm-32.jpg" width="32" height="32" alt="Open Street Map"/> Open Street Map</a>
+        
     </p>
 </section>
 
         <h3>Address</h3>
-        <p>
-            <a href="https://www.facebook.com/russkult/">Russian Cultural Centre named after the count Sava Vladislavich</a>
-        </p>
-        <p>
-            Manastirska 2, Herceg Novi, Montenegro
-        </p>
+        <p>Bar, Montenegro</p>
     </section>
     <hr/>
     <section id="time">
         <h2>Date & Time</h2>
-        <p>30 May 2019, 12:00 PM</p>
+        <p>the end of june</p>
     </section>
     <hr/>
     <section id="join">
         <h2>Join Us On</h2>
         <div>
+            <!--
             <a href="http://www.meetup.com/Monte-Dev-Meetup/events/222683979/" target="_blank">
                 <img src="/assets/images/social/meetup.jpg" alt="meetup" width="64" height="64"/>
             </a>
@@ -273,6 +198,7 @@
             <a href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=OTN2b3JuNmIybjg5MDg1c2U5MTBvb2g2Zm8gaHl6aGFrYUBt&tmsrc=hyzhaka%40gmail.com" target="_blank">
                 <img src="/assets/images/social/google-calendar.jpg" alt="google calendar" width="64" height="64"/>
             </a>
+            -->
         </div>
         <p>
             <a href="/about.html#contacts">Contacts Us</a>
