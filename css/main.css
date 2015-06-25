@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #333333;
 }
@@ -467,6 +467,35 @@ body {
   .speaker-block {
     text-align: right;
   }
+}
+.bg-dark {
+  background: #2c3e50;
+  color: #dddddd;
+}
+.bg-dark a {
+  color: white;
+}
+.bg-dark a:hover {
+  color: #eeeeee;
+}
+.bg-dark .fa-inverse {
+  color: #2c3e50;
+}
+.bg-dark .text-danger {
+  color: #a94442;
+}
+.bg-dark .text-danger:hover {
+  color: #843534;
+}
+.bg-dark.lighter {
+  background: #384a5d;
+}
+.bg-dark.super-dark {
+  background: #233140;
+}
+.wide-breaker {
+  height: 92px;
+  padding: 32px;
 }
 
 
