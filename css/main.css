@@ -497,5 +497,20 @@ body {
   height: 92px;
   padding: 32px;
 }
+.about-page .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.about-page .logo .icon {
+  margin-left: 10px;
+}
+.about-page .logo .title {
+  font-size: 2em;
+}
+.about-page section {
+  margin-bottom: 70px;
+}
 
 
